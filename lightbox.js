@@ -3,6 +3,7 @@ const imagenesLight = document.querySelector(".agregar-imagen");
 const contenedorLight = document.querySelector(".imagen-light");
 const hamburguer1 = document.querySelector(".hamburguer");
 
+
 imagenes.forEach((imagen) => {
   imagen.addEventListener("click", () => {
     aparecerImagen(imagen.getAttribute("src"));
@@ -23,3 +24,21 @@ const aparecerImagen = (imagen) => {
   imagenesLight.classList.toggle("showImage");
   hamburguer1.style.opacity = "0"
 };
+
+function cerrar(.close){
+  console.log(evento);
+  }
+// closeLight = document.getElementById("#cerrar");
+// function cerrarFoto() {
+//   let closeLight = document.getElementById("#cerrar");
+//   closeLight.addEventListener("click", cerrarFoto);  
+// }
+
+
+
+
+
+
+    
+
+
