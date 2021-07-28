@@ -3,7 +3,6 @@ const imagenesLight = document.querySelector(".agregar-imagen");
 const contenedorLight = document.querySelector(".imagen-light");
 const hamburguer1 = document.querySelector(".hamburguer");
 
-
 imagenes.forEach((imagen) => {
   imagen.addEventListener("click", () => {
     aparecerImagen(imagen.getAttribute("src"));
@@ -11,10 +10,10 @@ imagenes.forEach((imagen) => {
 });
 
 contenedorLight.addEventListener("click", (e) => {
-  if (e.target !== imagenesLight){
+  if (e.target !== imagenesLight) {
     contenedorLight.classList.toggle("show");
     imagenesLight.classList.toggle("showImage");
-    hamburguer1.style.opacity = "1"
+    hamburguer1.style.opacity = "1";
   }
 });
 
@@ -22,23 +21,5 @@ const aparecerImagen = (imagen) => {
   imagenesLight.src = imagen;
   contenedorLight.classList.toggle("show");
   imagenesLight.classList.toggle("showImage");
-  hamburguer1.style.opacity = "0"
+  hamburguer1.style.opacity = "0";
 };
-
-function cerrar(.close){
-  console.log(evento);
-  }
-// closeLight = document.getElementById("#cerrar");
-// function cerrarFoto() {
-//   let closeLight = document.getElementById("#cerrar");
-//   closeLight.addEventListener("click", cerrarFoto);  
-// }
-
-
-
-
-
-
-    
-
-
